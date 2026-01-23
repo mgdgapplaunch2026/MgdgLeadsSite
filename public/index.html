@@ -4,41 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MGDG | Modern Gold Ownership</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="hero">
-        <nav>
+    <nav>
+        <div class="container">
             <div class="logo">MGDG</div>
-        </nav>
-        <div class="hero-content">
-            <h1>The Timeless Value of Gold. <br>Refined for the Digital Age.</h1>
-            <p>Simple, secure, and accessible gold ownership. Launching March 2026.</p>
-            <a href="#signup" class="cta-button">Join the Early Access List</a>
+            <a href="#signup" class="nav-cta">Early Access</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <span class="badge">Arriving March 2026</span>
+            <h1>The Gold Standard.<br><span class="gold-text">Re-engineered.</span></h1>
+            <p>Gold has preserved wealth for centuries. MGDG makes owning it as simple as opening an app. Join the exclusive list for the most anticipated launch of 2026.</p>
+            <div class="hero-btns">
+                <a href="#signup" class="btn-primary">Reserve Priority Access</a>
+            </div>
         </div>
     </header>
 
-    <section class="info-section">
-        <h2>Why Gold Still Matters</h2>
-        <p>A hedge against inflation and market volatility for centuries.</p>
-        </section>
+    <section class="trust-bar">
+        <div class="container">
+            <p class="section-tag">Built on Foundation of Transparency</p>
+            <div class="trust-grid">
+                <span>✓ Fully Insured Storage</span>
+                <span>✓ Independent Audits</span>
+                <span>✓ Secure Digital Infrastructure</span>
+            </div>
+        </div>
+    </section>
 
-    <section id="signup" class="form-section">
-        <h2>Reserve Your Priority Access</h2>
-        <p>Be the first to know when the MGDG app goes live on Google Play.</p>
-        
-        <form action="/api/signup" method="POST">
-            <input type="text" name="name" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
-            <button type="submit">Notify Me at Launch</button>
-        </form>
+    <section class="info-section">
+        <div class="container grid-2">
+            <div class="info-content">
+                <h2>Why Gold Still Wins</h2>
+                <p>In an era of currency risk and market volatility, gold remains the ultimate hedge. It’s not about "getting rich"—it's about staying wealthy.</p>
+                <ul class="benefit-list">
+                    <li><strong>Inflation Protection:</strong> Maintain purchasing power.</li>
+                    <li><strong>Universal Value:</strong> Recognized globally for 5,000 years.</li>
+                    <li><strong>Stability:</strong> The ultimate anchor for your portfolio.</li>
+                </ul>
+            </div>
+            <div class="info-visual">
+                <div class="vault-graphic"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-hype">
+        <div class="container">
+            <h2>The App That Changes Everything</h2>
+            <p>Direct, digital access to physical gold with institutional-grade security and retail-level ease. Instant liquidity. Fractional ownership. Total transparency.</p>
+        </div>
+    </section>
+
+    <section id="signup" class="lead-capture">
+        <div class="container">
+            <div class="form-card">
+                <h3>Don't Just Watch the Launch. Lead it.</h3>
+                <p>Join the early access list for priority onboarding and receive our <strong>"2026 Beginner’s Guide to Gold Ownership"</strong> digital copy.</p>
+                
+                <form id="waitlistForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Reserve My Priority Access</button>
+                </form>
+                <p class="disclaimer">MGDG is built for stability and long-term wealth.</p>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 MGDG. Stability for the Modern Investor.</p>
+        <div class="container">
+            <p>&copy; 2026 MGDG. Modern Wealth. Timeless Stability.</p>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

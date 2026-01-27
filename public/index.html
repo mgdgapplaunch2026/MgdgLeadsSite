@@ -3,48 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>MGDG | Digital Gold Ownership & Wealth Preservation</title>
-    <meta name="description" content="MGDG offers secure, 1:1 physical gold backing with digital liquidity. Join the waitlist for the March 2026 Google Play app launch and secure your sovereign assets.">
-    <meta name="keywords" content="digital gold, buy gold app, wealth preservation, inflation hedge, LBMA gold, secure asset ownership">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.mgdg.com/">
-    <meta property="og:title" content="MGDG | The Sovereign Asset. Digitally Perfected.">
-    <meta property="og:description" content="Secure your digital gold holdings with physical backing and institutional security. Launching March 2026.">
-    <meta property="og:image" content="/assets/og-image.jpg">
-
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="MGDG | Re-engineering the Gold Standard">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "MGDG",
-      "operatingSystem": "Android",
-      "applicationCategory": "FinanceApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "description": "Early Access Waitlist"
-      },
-      "description": "A digital platform for secure, 1:1 physically-backed gold ownership.",
-      "releaseDate": "2026-03-31"
-    }
-    </script>
-
+    <meta name="description" content="MGDG: The Sovereign Asset. Digitally Perfected. Secure your digital gold ownership before the March 2026 launch.">
+    <title>MGDG | Re-engineering the Gold Standard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container nav-flex">
-            <div class="logo">MGDG<span class="dot">.</span></div>
+            <a href="#" class="logo">MGDG<span class="dot">.</span></a>
             <div class="nav-links">
                 <a href="#about">The Asset</a>
+                <a href="#vision">Vision</a>
                 <a href="#signup" class="btn-nav">Early Access</a>
             </div>
         </div>
@@ -53,22 +26,29 @@
     <main>
         <!-- HERO SECTION -->
         <section class="hero">
-            <div class="container">
-                <div class="hero-grid">
-                    <div class="hero-content">
-                        <div class="kicker">Launching Late March 2026</div>
-                        <h1 class="serif">The Sovereign Asset.<br><span class="accent">Digitally Perfected.</span></h1>
-                        <p class="lead">MGDG re-engineers gold ownership for the modern era. Institutional-grade security meets instant digital liquidity. No hype. Just wealth preservation.</p>
-                        <div class="hero-actions">
-                            <a href="#signup" class="btn btn-primary">Secure Priority Onboarding</a>
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <span class="kicker">Launching Late March 2026</span>
+                    <h1 class="serif">The Sovereign Asset.<br><span class="accent italic">Digitally Perfected.</span></h1>
+                    <p class="lead">MGDG re-engineers gold ownership for the modern era. Institutional-grade security meets instant digital liquidity. No hype. Just wealth preservation.</p>
+                    <div class="hero-actions">
+                        <a href="#signup" class="btn btn-primary">Secure Priority Onboarding</a>
+                        <a href="#about" class="btn btn-outline">Explore The Asset</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal delay-1">
+                    <div class="vault-frame">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000" alt="Precision Engineering" class="hero-img">
+                        <div class="vault-overlay">
+                            <div class="status-badge">
+                                <span class="pulse-dot"></span>
+                                <span class="status-text">ACTIVE AUDIT</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="hero-visual">
-                        <div class="vault-frame">
-                            <div class="vault-line"></div>
-                            <div class="vault-label">RESERVE STATUS: ACTIVE</div>
-                        </div>
-                    </div>
+                    <div class="decoration-frame top-left"></div>
+                    <div class="decoration-frame bottom-right"></div>
                 </div>
             </div>
         </section>
@@ -76,110 +56,191 @@
         <!-- TRUST BAR -->
         <section class="trust-bar">
             <div class="container grid-trust">
-                <div class="trust-item"><span>LBMA Verified</span></div>
-                <div class="trust-item"><span>Independently Audited</span></div>
-                <div class="trust-item"><span>Fully Insured Vaulting</span></div>
-                <div class="trust-item"><span>1:1 Physical Backing</span></div>
+                <div class="trust-item reveal"><span>LBMA Verified</span></div>
+                <div class="trust-item reveal delay-1"><span>Independently Audited</span></div>
+                <div class="trust-item reveal delay-2"><span>Fully Insured Vaulting</span></div>
+                <div class="trust-item reveal delay-3"><span>1:1 Physical Backing</span></div>
             </div>
         </section>
 
-        <!-- EDUCATION: WHY GOLD -->
+        <!-- EDUCATION -->
         <section id="about" class="education">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="serif">Why MGDG is the Modern Hedge Against Inflation</h2>
-                    <div class="line"></div>
+            <div class="container grid-2">
+                <div class="edu-visual reveal">
+                    <div class="edu-frame">
+                        <img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&q=80&w=1000" alt="Physical Gold Bullion" class="rigid-img">
+                        <div class="edu-badge">
+                            <span>AUTHENTIC<br>BULLION<br>STORAGE</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="grid-2">
-                    <div class="edu-content">
-                        <p><strong>Is digital gold a safe investment?</strong> Paper currencies lose value by design, but MGDG ensures that your wealth is backed 1:1 by LBMA-verified physical bullion. For over 5,000 years, gold has remained the ultimate protection against currency devaluation.</p>
-                        <p class="mt-1">MGDG simplifies <strong>how to buy digital gold</strong> by removing the friction of physical storage and complex brokerage fees. We provide central-bank level security via a streamlined mobile interface.</p>
+                <div class="edu-text reveal delay-1">
+                    <div class="section-header">
+                        <div class="line-accent"></div>
+                        <h2 class="serif">Stability in a World <br>of Volatility</h2>
                     </div>
+                    <p>Paper currencies lose value by design. Gold preserves it by nature. For over 5,000 years, gold has remained the ultimate hedge against inflation and currency devaluation.</p>
+                    <div class="edu-stats">
+                        <div class="stat-box">
+                            <div class="stat-val">0%</div>
+                            <div class="stat-desc uppercase">Counterparty risk in physical allocation.</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-val">100%</div>
+                            <div class="stat-desc uppercase">Direct legal title to your holdings.</div>
+                        </div>
                     </div>
+                </div>
             </div>
         </section>
 
         <!-- APP TEASER -->
         <section class="app-launch">
             <div class="container">
-                <div class="launch-box">
-                    <div class="launch-text">
-                        <h2 class="serif">The Vault App. <span class="accent">Google Play Launch.</span></h2>
-                        <p>Our flagship mobile interface launches at the end of March 2026. Early list members receive a curated <strong>"2026 Beginner’s Guide to Gold Ownership"</strong> and priority account verification.</p>
-                    </div>
-                    <div class="launch-features">
-                        <ul>
-                            <li>Real-time Physical Price Tracking</li>
-                            <li>Instant Liquidity to Fiat</li>
-                            <li>Automated Accumulation Plans</li>
-                        </ul>
+                <div class="launch-inner reveal">
+                    <div class="launch-grid">
+                        <div class="launch-text">
+                            <h2 class="serif">The Vault App. <br><span class="accent italic">Google Play Launch.</span></h2>
+                            <p>Our flagship mobile interface launches at the end of March 2026. Early list members receive priority onboarding and our exclusive wealth guide.</p>
+                            <ul class="feature-list">
+                                <li>Real-time Physical Price Tracking</li>
+                                <li>Instant Liquidity to Fiat</li>
+                                <li>Automated Accumulation Plans</li>
+                            </ul>
+                        </div>
+                        <div class="app-mockup-wrapper reveal delay-1">
+                            <div class="smartphone">
+                                <div class="screen">
+                                    <div class="screen-content">
+                                        <header class="screen-header">MGDG.</header>
+                                        <div class="wallet-info">
+                                            <small>Current Reserve</small>
+                                            <h3>1,240.50g</h3>
+                                            <span class="trend">+$420.12 (24h)</span>
+                                        </div>
+                                        <div class="chart-container">
+                                            <svg viewBox="0 0 100 40" class="mini-chart">
+                                                <defs>
+                                                    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                        <stop offset="0%" style="stop-color:var(--gold);stop-opacity:0.3" />
+                                                        <stop offset="100%" style="stop-color:var(--gold);stop-opacity:0" />
+                                                    </linearGradient>
+                                                </defs>
+                                                <path d="M0 40 L0 35 Q 20 20, 40 30 T 100 5 L 100 40 Z" fill="url(#grad)" />
+                                                <path d="M0 35 Q 20 20, 40 30 T 100 5" fill="none" stroke="var(--gold)" stroke-width="1" />
+                                            </svg>
+                                        </div>
+                                        <div class="screen-footer">
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 66%"></div>
+                                            </div>
+                                            <div class="screen-btn">TRANSACTION CENTER</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- AUDIENCE -->
-        <section class="audience">
+        <section id="vision" class="audience">
             <div class="container">
-                <h2 class="serif text-center mb-4">Who is MGDG for?</h2>
+                <h2 class="serif text-center mb-12 reveal">Built for the <br><span class="italic">Visionary Saver</span></h2>
                 <div class="grid-3">
-                    <div class="profile-card">
-                        <div class="profile-icon">01</div>
-                        <h3>The Long-Term Saver</h3>
-                        <p>Those looking to build a generational legacy outside the traditional banking system.</p>
+                    <div class="profile-card reveal">
+                        <div class="card-img-container">
+                            <img src="https://images.unsplash.com/photo-1591033594798-33227a05780d?auto=format&fit=crop&q=80&w=800" alt="Legacy" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <span class="card-index">01</span>
+                            <h3>The Long-Term Saver</h3>
+                            <p>Build a generational legacy outside the banking system with an asset that never expires.</p>
+                            <div class="card-line"></div>
+                        </div>
                     </div>
-                    <div class="profile-card">
-                        <div class="profile-icon">02</div>
-                        <h3>The Inflation-Wary</h3>
-                        <p>Individuals seeking to protect their hard-earned purchasing power from devaluing fiat.</p>
+                    <div class="profile-card reveal delay-1">
+                        <div class="card-img-container">
+                            <img src="https://images.unsplash.com/photo-1589758438368-0ad531db3366?auto=format&fit=crop&q=80&w=800" alt="Protection" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <span class="card-index">02</span>
+                            <h3>The Inflation-Wary</h3>
+                            <p>Protect your hard-earned purchasing power from the erosion of devaluing fiat currencies.</p>
+                            <div class="card-line"></div>
+                        </div>
                     </div>
-                    <div class="profile-card">
-                        <div class="profile-icon">03</div>
-                        <h3>The Modern Professional</h3>
-                        <p>Digital natives who value the stability of gold but require the speed of an app.</p>
+                    <div class="profile-card reveal delay-2">
+                        <div class="card-img-container">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="Efficiency" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <span class="card-index">03</span>
+                            <h3>The Professional</h3>
+                            <p>Modern natives who value stability but require the speed and precision of a digital interface.</p>
+                            <div class="card-line"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- LEAD CAPTURE -->
+        <!-- SIGNUP -->
         <section id="signup" class="signup">
             <div class="container">
-                <div class="signup-container">
+                <div class="signup-wrapper reveal">
                     <div class="signup-info">
-                        <h2 class="serif">Request Early Access</h2>
-                        <p>Join the private waitlist for the March 2026 launch. Early members receive priority onboarding and our exclusive wealth preservation guide.</p>
-                    </div>
-                    <form id="leadForm" class="signup-form">
-                        <div class="input-row">
-                            <input type="text" id="name" placeholder="Full Name" required>
-                            <input type="email" id="email" placeholder="Email Address" required>
+                        <h2 class="serif">Request <br>Early Access</h2>
+                        <p>Join the private waitlist for the March 2026 launch. Members receive the "2026 Gold Ownership Guide."</p>
+                        <div class="signup-privilege">
+                            <span class="tag">EXCLUSIVE PRIVILEGE</span>
+                            <p>Priority verification for first 1,000 members.</p>
                         </div>
-                        <select id="interest" class="form-select">
-                            <option value="" disabled selected>Primary Interest</option>
-                            <option value="long-term">Long-term Saving</option>
-                            <option value="diversification">Portfolio Diversification</option>
-                            <option value="inflation">Inflation Hedge</option>
-                        </select>
-                        <button type="submit" class="btn btn-primary full-width" id="submitBtn">Join the Waitlist</button>
-                        <div id="responseMessage" class="message"></div>
-                    </form>
+                    </div>
+                    <div class="signup-form-container">
+                        <form id="waitlistForm" class="signup-form">
+                            <div class="form-group">
+                                <label>FULL NAME</label>
+                                <input type="text" id="name" placeholder="E.g. Alexander Sterling" required>
+                            </div>
+                            <div class="form-group">
+                                <label>EMAIL ADDRESS</label>
+                                <input type="email" id="email" placeholder="name@domain.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>PRIMARY GOAL</label>
+                                <select id="goal" required>
+                                    <option value="" disabled selected>Select Intent</option>
+                                    <option value="saving">Long-term Saving</option>
+                                    <option value="diversify">Portfolio Diversification</option>
+                                    <option value="institutional">Institutional Reserve</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary full-width" id="submitBtn">Secure Waitlist Status</button>
+                            <div id="formStatus" class="form-status"></div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container text-center">
-            <div class="logo mb-2">MGDG<span class="dot">.</span></div>
-            <p class="muted">A new standard in digital gold ownership.</p>
-            <div class="footer-fineprint">
-                <p>&copy; 2026 MGDG Digital. All rights reserved.</p>
-                <p>Gold involves risk. Ensure you consult with a financial advisor before making significant allocations.</p>
+        <div class="container footer-content">
+            <a href="#" class="logo mb-8">MGDG<span class="dot">.</span></a>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Ownership</a>
+                <a href="#">Audit Methodology</a>
             </div>
+            <p class="copyright">
+                &copy; 2026 MGDG Digital. All rights reserved. MGDG refers to physical gold allocated in LBMA-certified vaults. Investing in commodities involves market risk. No information on this site constitutes financial advice.
+            </p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

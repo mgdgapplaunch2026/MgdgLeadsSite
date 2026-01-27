@@ -5,7 +5,7 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-app.use(express.static(path.join(__dirname, 'public')));
+
 // Database Connection
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
@@ -13,8 +13,10 @@ const pool = new Pool({
 });
 
 // Middleware
-app.use(express.static('public'));
-app.use(express.json());
+// Middleware
+app.use(express.json()); // Essential for reading the form data
+app.use(express.static(path.join(__dirname, 'public'))); // Tells Express where your files are
+app.get('/favicon.ico', (req, res) => res.status(204).end());
 
 // Basic Route
 app.get('/', (req, res) => {

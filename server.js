@@ -12,6 +12,8 @@ const pool = new Pool({
   ssl: { rejectUnauthorized: false }
 });
 
+
+
 // Middleware
 // Middleware
 app.use(express.json()); // Essential for reading the form data
